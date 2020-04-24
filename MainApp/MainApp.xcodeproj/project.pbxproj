@@ -7,22 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		261CF1CF2425387F00C9E095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1CE2425387F00C9E095 /* AppDelegate.swift */; };
-		261CF1D12425387F00C9E095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D02425387F00C9E095 /* SceneDelegate.swift */; };
-		261CF1D32425387F00C9E095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D22425387F00C9E095 /* ViewController.swift */; };
+		260D9133244890B90081E089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D22425387F00C9E095 /* ViewController.swift */; };
+		260D9134244890BE0081E089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1CE2425387F00C9E095 /* AppDelegate.swift */; };
+		260D9135244890D00081E089 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451582441E543005623E0 /* HomeVC.swift */; };
+		260D9136244890D00081E089 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515A2441E574005623E0 /* CategoriesVC.swift */; };
+		260D9137244890D00081E089 /* MyCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515F2441E66B005623E0 /* MyCartVC.swift */; };
+		260D9138244890D00081E089 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515C2441E58D005623E0 /* WishListVC.swift */; };
+		260D9139244890D00081E089 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF201242539FC00C9E095 /* AccountVC.swift */; };
+		260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451612441F074005623E0 /* AccountTableViewCell.swift */; };
+		260D913B244890DD0081E089 /* CountryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451652443421A005623E0 /* CountryTableCell.swift */; };
+		260D913C244890E10081E089 /* LanguageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664516924434235005623E0 /* LanguageTableCell.swift */; };
+		260D913D244890EE0081E089 /* SelectedCountryAndLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */; };
+		260D913E244890F10081E089 /* CountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664517024438401005623E0 /* CountryListTableViewCell.swift */; };
+		260D913F244890F60081E089 /* LanguageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451742443841D005623E0 /* LanguageListTableViewCell.swift */; };
+		260D9140244890FA0081E089 /* APIFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAEE53244878B4008C19CF /* APIFile.swift */; };
+		260D9141244890FF0081E089 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D02425387F00C9E095 /* SceneDelegate.swift */; };
+		260D91422448910B0081E089 /* MainApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D72425387F00C9E095 /* MainApp.xcdatamodeld */; };
 		261CF1D62425387F00C9E095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1D42425387F00C9E095 /* Main.storyboard */; };
-		261CF1D92425387F00C9E095 /* MainApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D72425387F00C9E095 /* MainApp.xcdatamodeld */; };
 		261CF1DB2425388200C9E095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1DA2425388200C9E095 /* Assets.xcassets */; };
 		261CF1DE2425388200C9E095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1DC2425388200C9E095 /* LaunchScreen.storyboard */; };
-		261CF1E92425388300C9E095 /* MainAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1E82425388300C9E095 /* MainAppTests.swift */; };
 		261CF1F42425388300C9E095 /* MainAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1F32425388300C9E095 /* MainAppUITests.swift */; };
-		261CF202242539FC00C9E095 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF201242539FC00C9E095 /* AccountVC.swift */; };
-		266451592441E543005623E0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451582441E543005623E0 /* HomeVC.swift */; };
-		2664515B2441E574005623E0 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515A2441E574005623E0 /* CategoriesVC.swift */; };
-		2664515D2441E58D005623E0 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515C2441E58D005623E0 /* WishListVC.swift */; };
-		266451602441E66B005623E0 /* MyCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515F2441E66B005623E0 /* MyCartVC.swift */; };
-		266451632441F074005623E0 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451612441F074005623E0 /* AccountTableViewCell.swift */; };
+		265A5BA22453612600DD7312 /* MainAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A5BA12453612500DD7312 /* MainAppTests.swift */; };
 		266451642441F074005623E0 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451622441F074005623E0 /* AccountTableViewCell.xib */; };
+		266451682443421A005623E0 /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451662443421A005623E0 /* CountryTableCell.xib */; };
+		2664516C24434235005623E0 /* LanguageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2664516A24434235005623E0 /* LanguageTableCell.xib */; };
+		2664517324438401005623E0 /* CountryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2664517124438401005623E0 /* CountryListTableViewCell.xib */; };
+		266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451752443841D005623E0 /* LanguageListTableViewCell.xib */; };
+		26B8276324534D21007FC104 /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276224534D21007FC104 /* JoinVC.swift */; };
+		26B8276524534D31007FC104 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276424534D31007FC104 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,18 +65,31 @@
 		261CF1DD2425388200C9E095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		261CF1DF2425388200C9E095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261CF1E42425388300C9E095 /* MainAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		261CF1E82425388300C9E095 /* MainAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppTests.swift; sourceTree = "<group>"; };
 		261CF1EA2425388300C9E095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261CF1EF2425388300C9E095 /* MainAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		261CF1F32425388300C9E095 /* MainAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppUITests.swift; sourceTree = "<group>"; };
 		261CF1F52425388300C9E095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261CF201242539FC00C9E095 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		265A5BA02453612500DD7312 /* MainAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		265A5BA12453612500DD7312 /* MainAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppTests.swift; sourceTree = "<group>"; };
 		266451582441E543005623E0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2664515A2441E574005623E0 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		2664515C2441E58D005623E0 /* WishListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		2664515F2441E66B005623E0 /* MyCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartVC.swift; sourceTree = "<group>"; };
 		266451612441F074005623E0 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		266451622441F074005623E0 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		266451652443421A005623E0 /* CountryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableCell.swift; sourceTree = "<group>"; };
+		266451662443421A005623E0 /* CountryTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableCell.xib; sourceTree = "<group>"; };
+		2664516924434235005623E0 /* LanguageTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableCell.swift; sourceTree = "<group>"; };
+		2664516A24434235005623E0 /* LanguageTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableCell.xib; sourceTree = "<group>"; };
+		2664517024438401005623E0 /* CountryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTableViewCell.swift; sourceTree = "<group>"; };
+		2664517124438401005623E0 /* CountryListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryListTableViewCell.xib; sourceTree = "<group>"; };
+		266451742443841D005623E0 /* LanguageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageListTableViewCell.swift; sourceTree = "<group>"; };
+		266451752443841D005623E0 /* LanguageListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageListTableViewCell.xib; sourceTree = "<group>"; };
+		266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountryAndLanguageVC.swift; sourceTree = "<group>"; };
+		26AAEE53244878B4008C19CF /* APIFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFile.swift; sourceTree = "<group>"; };
+		26B8276224534D21007FC104 /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
+		26B8276424534D31007FC104 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +143,13 @@
 				261CF1D22425387F00C9E095 /* ViewController.swift */,
 				261CF1CE2425387F00C9E095 /* AppDelegate.swift */,
 				261CF1D42425387F00C9E095 /* Main.storyboard */,
+				26AAEE53244878B4008C19CF /* APIFile.swift */,
 				2664515E2441E593005623E0 /* TabBarVC */,
 				261CF1DA2425388200C9E095 /* Assets.xcassets */,
 				261CF1DC2425388200C9E095 /* LaunchScreen.storyboard */,
 				261CF1D02425387F00C9E095 /* SceneDelegate.swift */,
 				261CF1DF2425388200C9E095 /* Info.plist */,
 				261CF1D72425387F00C9E095 /* MainApp.xcdatamodeld */,
-				266451612441F074005623E0 /* AccountTableViewCell.swift */,
-				266451622441F074005623E0 /* AccountTableViewCell.xib */,
 			);
 			path = MainApp;
 			sourceTree = "<group>";
@@ -133,8 +157,9 @@
 		261CF1E72425388300C9E095 /* MainAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				261CF1E82425388300C9E095 /* MainAppTests.swift */,
+				265A5BA12453612500DD7312 /* MainAppTests.swift */,
 				261CF1EA2425388300C9E095 /* Info.plist */,
+				265A5BA02453612500DD7312 /* MainAppTests-Bridging-Header.h */,
 			);
 			path = MainAppTests;
 			sourceTree = "<group>";
@@ -155,9 +180,46 @@
 				2664515A2441E574005623E0 /* CategoriesVC.swift */,
 				2664515F2441E66B005623E0 /* MyCartVC.swift */,
 				2664515C2441E58D005623E0 /* WishListVC.swift */,
-				261CF201242539FC00C9E095 /* AccountVC.swift */,
+				26B8276124534CC5007FC104 /* Account ViewController */,
 			);
 			path = TabBarVC;
+			sourceTree = "<group>";
+		};
+		2664516D24435D07005623E0 /* AccountTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				266451612441F074005623E0 /* AccountTableViewCell.swift */,
+				266451622441F074005623E0 /* AccountTableViewCell.xib */,
+				266451652443421A005623E0 /* CountryTableCell.swift */,
+				266451662443421A005623E0 /* CountryTableCell.xib */,
+				2664516924434235005623E0 /* LanguageTableCell.swift */,
+				2664516A24434235005623E0 /* LanguageTableCell.xib */,
+			);
+			path = AccountTableViewCell;
+			sourceTree = "<group>";
+		};
+		2664517A2443B67C005623E0 /* ListOfCountryAndLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */,
+				2664517024438401005623E0 /* CountryListTableViewCell.swift */,
+				2664517124438401005623E0 /* CountryListTableViewCell.xib */,
+				266451742443841D005623E0 /* LanguageListTableViewCell.swift */,
+				266451752443841D005623E0 /* LanguageListTableViewCell.xib */,
+			);
+			path = ListOfCountryAndLanguage;
+			sourceTree = "<group>";
+		};
+		26B8276124534CC5007FC104 /* Account ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				261CF201242539FC00C9E095 /* AccountVC.swift */,
+				26B8276424534D31007FC104 /* SignInVC.swift */,
+				26B8276224534D21007FC104 /* JoinVC.swift */,
+				2664516D24435D07005623E0 /* AccountTableViewCell */,
+				2664517A2443B67C005623E0 /* ListOfCountryAndLanguage */,
+			);
+			path = "Account ViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +293,7 @@
 					};
 					261CF1E32425388300C9E095 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 261CF1CA2425387F00C9E095;
 					};
 					261CF1EE2425388300C9E095 = {
@@ -265,9 +328,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				261CF1DE2425388200C9E095 /* LaunchScreen.storyboard in Resources */,
+				266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */,
 				266451642441F074005623E0 /* AccountTableViewCell.xib in Resources */,
+				2664516C24434235005623E0 /* LanguageTableCell.xib in Resources */,
+				2664517324438401005623E0 /* CountryListTableViewCell.xib in Resources */,
 				261CF1DB2425388200C9E095 /* Assets.xcassets in Resources */,
 				261CF1D62425387F00C9E095 /* Main.storyboard in Resources */,
+				266451682443421A005623E0 /* CountryTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,16 +359,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261CF1D32425387F00C9E095 /* ViewController.swift in Sources */,
-				261CF202242539FC00C9E095 /* AccountVC.swift in Sources */,
-				261CF1CF2425387F00C9E095 /* AppDelegate.swift in Sources */,
-				266451632441F074005623E0 /* AccountTableViewCell.swift in Sources */,
-				2664515D2441E58D005623E0 /* WishListVC.swift in Sources */,
-				266451592441E543005623E0 /* HomeVC.swift in Sources */,
-				261CF1D92425387F00C9E095 /* MainApp.xcdatamodeld in Sources */,
-				266451602441E66B005623E0 /* MyCartVC.swift in Sources */,
-				261CF1D12425387F00C9E095 /* SceneDelegate.swift in Sources */,
-				2664515B2441E574005623E0 /* CategoriesVC.swift in Sources */,
+				260D9141244890FF0081E089 /* SceneDelegate.swift in Sources */,
+				26B8276524534D31007FC104 /* SignInVC.swift in Sources */,
+				260D9140244890FA0081E089 /* APIFile.swift in Sources */,
+				260D913F244890F60081E089 /* LanguageListTableViewCell.swift in Sources */,
+				260D913E244890F10081E089 /* CountryListTableViewCell.swift in Sources */,
+				26B8276324534D21007FC104 /* JoinVC.swift in Sources */,
+				260D913D244890EE0081E089 /* SelectedCountryAndLanguageVC.swift in Sources */,
+				260D913C244890E10081E089 /* LanguageTableCell.swift in Sources */,
+				260D913B244890DD0081E089 /* CountryTableCell.swift in Sources */,
+				260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */,
+				260D9135244890D00081E089 /* HomeVC.swift in Sources */,
+				260D9136244890D00081E089 /* CategoriesVC.swift in Sources */,
+				260D9137244890D00081E089 /* MyCartVC.swift in Sources */,
+				260D9138244890D00081E089 /* WishListVC.swift in Sources */,
+				260D9139244890D00081E089 /* AccountVC.swift in Sources */,
+				260D9134244890BE0081E089 /* AppDelegate.swift in Sources */,
+				260D91422448910B0081E089 /* MainApp.xcdatamodeld in Sources */,
+				260D9133244890B90081E089 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261CF1E92425388300C9E095 /* MainAppTests.swift in Sources */,
+				265A5BA22453612600DD7312 /* MainAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +584,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -519,6 +595,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ttn.com.MainAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MainAppTests/MainAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MainApp.app/MainApp";
@@ -530,6 +608,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MainAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -540,6 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ttn.com.MainAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MainAppTests/MainAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MainApp.app/MainApp";

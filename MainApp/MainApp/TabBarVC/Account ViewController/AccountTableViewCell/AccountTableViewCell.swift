@@ -13,6 +13,7 @@ class AccountTableViewCell: UITableViewCell {
     @IBOutlet weak var accountTableViewText: UILabel!
     
     override func awakeFromNib() {
+        //print("account table view cell")
         super.awakeFromNib()
         // Initialization code
     }
@@ -23,10 +24,12 @@ class AccountTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //function for the image icon in tabel view cell
     func forAccountTabelViewImage(image : UIImage){
         accountTableViewImage.image = image
     }
     
+    //function for the lable in the table view cell
     func forAccountTabelViewLabel(text : String){
         accountTableViewText.text = text
     }

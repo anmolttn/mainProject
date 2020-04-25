@@ -10,10 +10,10 @@ import UIKit
 
 class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITableViewDelegate,UITableViewDataSource{
     
+    //default name of country and language
     var countryName = "India"
     var countryImage = "IN"
     var dummy = #imageLiteral(resourceName: "US")
-    
     var languageName = "HIN"
 
 
@@ -24,6 +24,7 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     @IBOutlet weak var joinButton: UIButton!
     
 
+    //outlet of the view of signup and join button
     @IBOutlet weak var insideViewOutlet: UIView!
     
     
@@ -64,6 +65,7 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
         
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         print("view Will Appear")
@@ -95,6 +97,7 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     
     
     //MARK: Account table view delegate and data source
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableCellArray[section].count
     }
@@ -106,6 +109,7 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
              let cell = accountTableViewOutlet.dequeueReusableCell(withIdentifier: "CountryTableCell") as!  CountryTableCell
              cell.countryLogo(image: tableCellImages[1][0])
              cell.countryText(text: tableCellArray[1][0])
+            //get the image in the cell
             if let url = URL(string: "https://www.countryflags.io/\(countryImage)/shiny/64.png"){
                 URLSession.shared.dataTask(with: url) { (data, response, error) in
                     if let data = data {
@@ -190,6 +194,7 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     }
 }
 
+//extension for protocol
 extension AccountVC : CountryDataProtocol{
     
     func passCountryData(countryName: String , countryImage : String){

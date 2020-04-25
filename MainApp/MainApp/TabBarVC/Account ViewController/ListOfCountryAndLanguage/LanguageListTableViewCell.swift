@@ -22,6 +22,7 @@ class LanguageListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //function for the language name in tabel view cell
     func nameOfTheLanguage(text : String){
         languageLabel.text = text
     }

@@ -19,6 +19,7 @@ init(countryName: String, countryImage: String) {
     }
 }
 
+//enum for the selection of the the country and language cell
 enum cellSelection {
     case Country
     case Language
@@ -58,12 +59,12 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //print(languageName)
+        selectTableViewOutlet.reloadData()
         //call the api function
         getData()
         
         //reload the country and language table
-        selectTableViewOutlet.reloadData()
+        //selectTableViewOutlet.reloadData()
         
         //delegate adn data source of table view
         selectTableViewOutlet.delegate = self
@@ -83,6 +84,7 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
         //selectTableViewOutlet.reloadData()
     }
     
+    //MARK: Account table view delegate and data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.countries.count
@@ -94,9 +96,11 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
         if SelectedCountryAndLanguageVC.selectedCell == .Country{
             
             let cell = selectTableViewOutlet.dequeueReusableCell(withIdentifier: "CountryListTableViewCell", for: indexPath) as! CountryListTableViewCell
+            
+            //set the country image and country name after the selection from country list
+            
             cell.nameOfTheCountry(text: self.countries[indexPath.row].countryName)
             if let url = URL(string: "https://www.countryflags.io/\(countries[indexPath.row].countryImage)/shiny/64.png"){
-            //print("image -------",  (countries[0].countryImage))
                 URLSession.shared.dataTask(with: url) { (data, response, error) in
                     if let data = data {
                         DispatchQueue.main.async {
@@ -115,6 +119,7 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
         else{
         
         let cell = selectTableViewOutlet.dequeueReusableCell(withIdentifier: "LanguageListTableViewCell", for: indexPath) as! LanguageListTableViewCell
+            //set the selected language from the language list
         cell.nameOfTheLanguage(text: languageName[indexPath.row])
             return cell
         }
@@ -125,15 +130,18 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
         
         selectTableViewOutlet.deselectRow(at: indexPath, animated: true)
         
-        
+        //selection of the table cell
         if SelectedCountryAndLanguageVC.selectedCell == .Country{
         
+            
+        //pass the data in the delegate
         delegateForCountry.passCountryData(countryName: countries[indexPath.row].countryName, countryImage: countries[indexPath.row].countryImage)
         }
         
-        
+        //selection of the table cell
         if SelectedCountryAndLanguageVC.selectedCell == .Language{
             
+            //pass the data in the delagate 
             delegateForLanguage.passLanguageData(languageName: languageName[indexPath.row])
             }
         self.navigationController?.popViewController(animated: true)
@@ -148,13 +156,10 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     
     //function to get the data from the api
     func getData(){
-        //print("abc function called")
           let api = APIForCountryAndLanguage()
          self.selectTableViewOutlet.reloadData()
           api.getData { (response , error ) in
-            //print(response)
               if let getResponse = response as? [String : String]{
-                //print(getResponse)
                   for (key , value) in getResponse {
                 self.countries.append(CountryItem(countryName: value, countryImage: key))
                       }

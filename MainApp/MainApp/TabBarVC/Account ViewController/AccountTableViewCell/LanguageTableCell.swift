@@ -24,14 +24,17 @@ class LanguageTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //function for the location logo in tabel view cell
     func imageOfLanguageIcon(image : UIImage){
         languageImageIcon.image = image
     }
     
+    //function for the language text in tabel view cell
     func labelOfTheLanguage(text : String){
         languageLabel.text = text
     }
     
+    //function for the language name in tabel view cell
     func nameOfTheLanguage(text1 : String){
         languageNameLabel.text = text1
     }

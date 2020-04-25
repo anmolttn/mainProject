@@ -23,10 +23,12 @@ class CountryListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //function for the country image in tabel view cell
     func flagImage(image : UIImage){
         countryFlagImage.image = image
     }
     
+    //function for the country name in tabel view cell
     func nameOfTheCountry(text : String){
         countryName.text = text
     }

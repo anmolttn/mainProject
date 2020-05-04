@@ -59,7 +59,7 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        selectTableViewOutlet.reloadData()
+        //selectTableViewOutlet.reloadData()
         //call the api function
         getData()
         
@@ -81,6 +81,12 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        //selectTableViewOutlet.reloadData()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        print("view did appear")
         //selectTableViewOutlet.reloadData()
     }
     

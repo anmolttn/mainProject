@@ -36,8 +36,6 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("view did load")
-        //accountTableViewOutlet.reloadData()
         
         insideViewOutlet.layer.cornerRadius = 10
         
@@ -68,7 +66,6 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        print("view Will Appear")
         accountTableViewOutlet.reloadData()
         
     }

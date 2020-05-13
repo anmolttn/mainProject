@@ -93,7 +93,14 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     //MARK: Account table view delegate and data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.countries.count
+        
+        if SelectedCountryAndLanguageVC.selectedCell == .Country{
+            return self.countries.count
+        }
+        else{
+            return self.languageName.count
+        }
+        //return self.countries.count
         //return languageName.count
     }
     

@@ -31,7 +31,7 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     let imageDelegate = UIImagePickerController()
     
     //table cell name and images declaration
-    let tableCellArray = [["Track Order","Size Cart","Notifications","Share Locator"],["Country","Language","About US","FAQ","Shipping & Returns"]]
+    let tableCellArray = [["Location","Movies","Notifications","My Circle/Employees"],["Country","Language","About US","FAQ","Change Theme"]]
     let tableCellImages = [[#imageLiteral(resourceName: "trackOrder"), #imageLiteral(resourceName: "size-2"), #imageLiteral(resourceName: "notification"),#imageLiteral(resourceName: "locator")], [#imageLiteral(resourceName: "country"), #imageLiteral(resourceName: "language"), #imageLiteral(resourceName: "aboutUS") , #imageLiteral(resourceName: "faq"), #imageLiteral(resourceName: "shipping")]]
     
     override func viewDidLoad() {
@@ -159,16 +159,23 @@ class AccountVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
         accountTableViewOutlet.deselectRow(at: indexPath, animated: true)
 
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "SelectedCountryAndLanguageVC") as! SelectedCountryAndLanguageVC
         
+        if indexPath.section == 0 && indexPath.row == 0{
+            let vc = storyBoard.instantiateViewController(withIdentifier: "LocationVC") as! LocationVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if indexPath.section == 0 && indexPath.row == 3{
+            let vc = storyBoard.instantiateViewController(withIdentifier: "EmployeeDataVC") as! EmployeeDataVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         if indexPath.section == 1 && indexPath.row == 0 {
-            
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SelectedCountryAndLanguageVC") as! SelectedCountryAndLanguageVC
             SelectedCountryAndLanguageVC.selectedCell = .Country
             vc.delegateForCountry = self
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        else if indexPath.section == 1 && indexPath.row == 1 {
-            
+         if indexPath.section == 1 && indexPath.row == 1 {
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SelectedCountryAndLanguageVC") as! SelectedCountryAndLanguageVC
             SelectedCountryAndLanguageVC.selectedCell = .Language
             vc.delegateForLanguage = self
             self.navigationController?.pushViewController(vc, animated: true)

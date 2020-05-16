@@ -93,8 +93,13 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     //MARK: Account table view delegate and data source
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.countries.count
-        //return languageName.count
+        if SelectedCountryAndLanguageVC.selectedCell == .Country{
+            
+            return self.countries.count
+        }
+        else {
+            return languageName.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -110,6 +115,7 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
                 URLSession.shared.dataTask(with: url) { (data, response, error) in
                     if let data = data {
                         DispatchQueue.main.async {
+                            self.selectTableViewOutlet.reloadData()
                             cell.flagImage(image: UIImage(data: data) ?? self.image123)
                             cell.countryFlagImage.contentMode = .scaleAspectFit
                         }
@@ -164,7 +170,7 @@ class SelectedCountryAndLanguageVC: UIViewController,UITableViewDelegate,UITable
     func getData(){
           let api = APIForCountryAndLanguage()
          self.selectTableViewOutlet.reloadData()
-          api.getData { (response , error ) in
+          api.getCountriesData { (response , error ) in
               if let getResponse = response as? [String : String]{
                   for (key , value) in getResponse {
                 self.countries.append(CountryItem(countryName: value, countryImage: key))

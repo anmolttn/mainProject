@@ -10,11 +10,10 @@
 		09D0CD49D9DF1D8B546E4FF5 /* Pods_MainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD897B76EB0FBA1EAA6F924B /* Pods_MainApp.framework */; };
 		260D9133244890B90081E089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D22425387F00C9E095 /* ViewController.swift */; };
 		260D9134244890BE0081E089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1CE2425387F00C9E095 /* AppDelegate.swift */; };
-		260D9135244890D00081E089 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451582441E543005623E0 /* HomeVC.swift */; };
-		260D9136244890D00081E089 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515A2441E574005623E0 /* CategoriesVC.swift */; };
-		260D9137244890D00081E089 /* MyCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515F2441E66B005623E0 /* MyCartVC.swift */; };
-		260D9138244890D00081E089 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515C2441E58D005623E0 /* WishListVC.swift */; };
-		260D9139244890D00081E089 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF201242539FC00C9E095 /* AccountVC.swift */; };
+		260D9135244890D00081E089 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451582441E543005623E0 /* HomeViewController.swift */; };
+		260D9137244890D00081E089 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515F2441E66B005623E0 /* FavouriteViewController.swift */; };
+		260D9138244890D00081E089 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664515C2441E58D005623E0 /* ChatViewController.swift */; };
+		260D9139244890D00081E089 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF201242539FC00C9E095 /* AccountViewController.swift */; };
 		260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451612441F074005623E0 /* AccountTableViewCell.swift */; };
 		260D913B244890DD0081E089 /* CountryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451652443421A005623E0 /* CountryTableCell.swift */; };
 		260D913C244890E10081E089 /* LanguageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664516924434235005623E0 /* LanguageTableCell.swift */; };
@@ -28,7 +27,10 @@
 		261CF1DB2425388200C9E095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1DA2425388200C9E095 /* Assets.xcassets */; };
 		261CF1DE2425388200C9E095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1DC2425388200C9E095 /* LaunchScreen.storyboard */; };
 		261CF1F42425388300C9E095 /* MainAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1F32425388300C9E095 /* MainAppUITests.swift */; };
-		2631E3B4246DB97000FE8E90 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631E3B3246DB97000FE8E90 /* LocationVC.swift */; };
+		2631E3B4246DB97000FE8E90 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631E3B3246DB97000FE8E90 /* LocationViewController.swift */; };
+		264713802473F34000874B4F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647137F2473F34000874B4F /* Employee.swift */; };
+		264713822473F40900874B4F /* CountryAndLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713812473F40900874B4F /* CountryAndLanguage.swift */; };
+		264713862473FDE100874B4F /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713852473FDE100874B4F /* EmployeesViewController.swift */; };
 		265A5BA22453612600DD7312 /* MainAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A5BA12453612500DD7312 /* MainAppTests.swift */; };
 		266451642441F074005623E0 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451622441F074005623E0 /* AccountTableViewCell.xib */; };
 		266451682443421A005623E0 /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451662443421A005623E0 /* CountryTableCell.xib */; };
@@ -37,9 +39,8 @@
 		266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451752443841D005623E0 /* LanguageListTableViewCell.xib */; };
 		2665E57E247087E50055037F /* EmployeeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665E57C247087E50055037F /* EmployeeInfoTableViewCell.swift */; };
 		2665E57F247087E50055037F /* EmployeeInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2665E57D247087E50055037F /* EmployeeInfoTableViewCell.xib */; };
-		26B8276324534D21007FC104 /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276224534D21007FC104 /* JoinVC.swift */; };
-		26B8276524534D31007FC104 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276424534D31007FC104 /* SignInVC.swift */; };
-		26F27B62246EBABD00CCEDB2 /* EmployeeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F27B61246EBABD00CCEDB2 /* EmployeeDataVC.swift */; };
+		26B8276324534D21007FC104 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276224534D21007FC104 /* JoinViewController.swift */; };
+		26B8276524534D31007FC104 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276424534D31007FC104 /* SignInViewController.swift */; };
 		34782F17A165C5E91A61205F /* Pods_MainApp_MainAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8577A90F97FA107DD7E1AFD6 /* Pods_MainApp_MainAppUITests.framework */; };
 		5D433534F74A70264D86F911 /* Pods_MainAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BB8C275207D038611F8B5E /* Pods_MainAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,14 +77,16 @@
 		261CF1EF2425388300C9E095 /* MainAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		261CF1F32425388300C9E095 /* MainAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppUITests.swift; sourceTree = "<group>"; };
 		261CF1F52425388300C9E095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		261CF201242539FC00C9E095 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
-		2631E3B3246DB97000FE8E90 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		261CF201242539FC00C9E095 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		2631E3B3246DB97000FE8E90 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		2647137F2473F34000874B4F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		264713812473F40900874B4F /* CountryAndLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndLanguage.swift; sourceTree = "<group>"; };
+		264713852473FDE100874B4F /* EmployeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		265A5BA02453612500DD7312 /* MainAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		265A5BA12453612500DD7312 /* MainAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppTests.swift; sourceTree = "<group>"; };
-		266451582441E543005623E0 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		2664515A2441E574005623E0 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
-		2664515C2441E58D005623E0 /* WishListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
-		2664515F2441E66B005623E0 /* MyCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCartVC.swift; sourceTree = "<group>"; };
+		266451582441E543005623E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2664515C2441E58D005623E0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		2664515F2441E66B005623E0 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		266451612441F074005623E0 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		266451622441F074005623E0 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
 		266451652443421A005623E0 /* CountryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableCell.swift; sourceTree = "<group>"; };
@@ -98,9 +101,8 @@
 		2665E57C247087E50055037F /* EmployeeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoTableViewCell.swift; sourceTree = "<group>"; };
 		2665E57D247087E50055037F /* EmployeeInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeInfoTableViewCell.xib; sourceTree = "<group>"; };
 		26AAEE53244878B4008C19CF /* APIFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFile.swift; sourceTree = "<group>"; };
-		26B8276224534D21007FC104 /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
-		26B8276424534D31007FC104 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
-		26F27B61246EBABD00CCEDB2 /* EmployeeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataVC.swift; sourceTree = "<group>"; };
+		26B8276224534D21007FC104 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		26B8276424534D31007FC104 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		44B8932FF45C3E030F54A19F /* Pods-MainApp-MainAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-MainAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8577A90F97FA107DD7E1AFD6 /* Pods_MainApp_MainAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MainApp_MainAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3231E38A1A373E52F18569 /* Pods-MainApp-MainAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-MainAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +172,8 @@
 				261CF1D02425387F00C9E095 /* SceneDelegate.swift */,
 				261CF1D42425387F00C9E095 /* Main.storyboard */,
 				26AAEE53244878B4008C19CF /* APIFile.swift */,
-				2664515E2441E593005623E0 /* TabBarVC */,
+				2647137E2473F30400874B4F /* Data Model */,
+				2664515E2441E593005623E0 /* TabBar Item */,
 				261CF1DA2425388200C9E095 /* Assets.xcassets */,
 				261CF1DC2425388200C9E095 /* LaunchScreen.storyboard */,
 				261CF1DF2425388200C9E095 /* Info.plist */,
@@ -198,20 +201,20 @@
 			path = MainAppUITests;
 			sourceTree = "<group>";
 		};
-		2631E3AD246DB69C00FE8E90 /* SignIn VC */ = {
+		2631E3AD246DB69C00FE8E90 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				26B8276424534D31007FC104 /* SignInVC.swift */,
+				26B8276424534D31007FC104 /* SignInViewController.swift */,
 			);
-			path = "SignIn VC";
+			path = SignIn;
 			sourceTree = "<group>";
 		};
-		2631E3AE246DB6AF00FE8E90 /* Join VC */ = {
+		2631E3AE246DB6AF00FE8E90 /* Join */ = {
 			isa = PBXGroup;
 			children = (
-				26B8276224534D21007FC104 /* JoinVC.swift */,
+				26B8276224534D21007FC104 /* JoinViewController.swift */,
 			);
-			path = "Join VC";
+			path = Join;
 			sourceTree = "<group>";
 		};
 		2631E3AF246DB6F500FE8E90 /* Country & Language TableViewCell */ = {
@@ -225,38 +228,40 @@
 			path = "Country & Language TableViewCell";
 			sourceTree = "<group>";
 		};
-		2631E3B0246DB79200FE8E90 /* Location VC */ = {
+		2631E3B0246DB79200FE8E90 /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				2631E3B3246DB97000FE8E90 /* LocationVC.swift */,
+				2631E3B3246DB97000FE8E90 /* LocationViewController.swift */,
 			);
-			path = "Location VC";
+			path = Location;
 			sourceTree = "<group>";
 		};
-		2631E3B1246DB7D000FE8E90 /* Movies VC */ = {
+		2631E3B2246DB7FD00FE8E90 /* AboutUs */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Movies VC";
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
-		2631E3B2246DB7FD00FE8E90 /* AboutUs VC */ = {
+		2647137E2473F30400874B4F /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				2647137F2473F34000874B4F /* Employee.swift */,
+				264713812473F40900874B4F /* CountryAndLanguage.swift */,
 			);
-			path = "AboutUs VC";
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
-		2664515E2441E593005623E0 /* TabBarVC */ = {
+		2664515E2441E593005623E0 /* TabBar Item */ = {
 			isa = PBXGroup;
 			children = (
-				26DCBBB8246C141000E0EBFA /* Home ViewController */,
-				2664515A2441E574005623E0 /* CategoriesVC.swift */,
-				2664515F2441E66B005623E0 /* MyCartVC.swift */,
-				2664515C2441E58D005623E0 /* WishListVC.swift */,
-				26B8276124534CC5007FC104 /* Account VC */,
+				26F27B60246EBA8E00CCEDB2 /* EmplyeeData */,
+				26DCBBB8246C141000E0EBFA /* Home */,
+				2664515F2441E66B005623E0 /* FavouriteViewController.swift */,
+				2664515C2441E58D005623E0 /* ChatViewController.swift */,
+				26B8276124534CC5007FC104 /* Account */,
 			);
-			path = TabBarVC;
+			path = "TabBar Item";
 			sourceTree = "<group>";
 		};
 		2664516D24435D07005623E0 /* AccountTableViewCell */ = {
@@ -280,39 +285,37 @@
 			path = ListOfCountryAndLanguage;
 			sourceTree = "<group>";
 		};
-		26B8276124534CC5007FC104 /* Account VC */ = {
+		26B8276124534CC5007FC104 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				261CF201242539FC00C9E095 /* AccountVC.swift */,
+				261CF201242539FC00C9E095 /* AccountViewController.swift */,
 				2664516D24435D07005623E0 /* AccountTableViewCell */,
-				2631E3B0246DB79200FE8E90 /* Location VC */,
-				2631E3B1246DB7D000FE8E90 /* Movies VC */,
-				26F27B60246EBA8E00CCEDB2 /* EmplyeeData VC */,
-				2631E3AD246DB69C00FE8E90 /* SignIn VC */,
-				2631E3AE246DB6AF00FE8E90 /* Join VC */,
+				2631E3B0246DB79200FE8E90 /* Location */,
+				2631E3AD246DB69C00FE8E90 /* SignIn */,
+				2631E3AE246DB6AF00FE8E90 /* Join */,
 				2664517A2443B67C005623E0 /* ListOfCountryAndLanguage */,
 				2631E3AF246DB6F500FE8E90 /* Country & Language TableViewCell */,
-				2631E3B2246DB7FD00FE8E90 /* AboutUs VC */,
+				2631E3B2246DB7FD00FE8E90 /* AboutUs */,
 			);
-			path = "Account VC";
+			path = Account;
 			sourceTree = "<group>";
 		};
-		26DCBBB8246C141000E0EBFA /* Home ViewController */ = {
+		26DCBBB8246C141000E0EBFA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				266451582441E543005623E0 /* HomeVC.swift */,
+				266451582441E543005623E0 /* HomeViewController.swift */,
 			);
-			path = "Home ViewController";
+			path = Home;
 			sourceTree = "<group>";
 		};
-		26F27B60246EBA8E00CCEDB2 /* EmplyeeData VC */ = {
+		26F27B60246EBA8E00CCEDB2 /* EmplyeeData */ = {
 			isa = PBXGroup;
 			children = (
-				26F27B61246EBABD00CCEDB2 /* EmployeeDataVC.swift */,
+				264713852473FDE100874B4F /* EmployeesViewController.swift */,
 				2665E57C247087E50055037F /* EmployeeInfoTableViewCell.swift */,
 				2665E57D247087E50055037F /* EmployeeInfoTableViewCell.xib */,
 			);
-			path = "EmplyeeData VC";
+			path = EmplyeeData;
 			sourceTree = "<group>";
 		};
 		38899B0A164045D40EED9AAD /* Frameworks */ = {
@@ -350,6 +353,7 @@
 				261CF1C82425387F00C9E095 /* Frameworks */,
 				261CF1C92425387F00C9E095 /* Resources */,
 				DACE5FCEE478213AA602715B /* [CP] Embed Pods Frameworks */,
+				25939C9A8F11A7E10FB568A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,6 +392,7 @@
 				261CF1EC2425388300C9E095 /* Frameworks */,
 				261CF1ED2425388300C9E095 /* Resources */,
 				BC13895B41EF5FB8A7040B4C /* [CP] Embed Pods Frameworks */,
+				7841CB32C998EAEDC1ECE0A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -499,6 +504,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		25939C9A8F11A7E10FB568A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainApp/Pods-MainApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		56DE5F9D8168F88B872B3BD5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,6 +541,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7841CB32C998EAEDC1ECE0A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		79879309927EF2F50AB2F2D1 /* [CP] Check Pods Manifest.lock */ = {
@@ -585,22 +624,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				260D9141244890FF0081E089 /* SceneDelegate.swift in Sources */,
-				26B8276524534D31007FC104 /* SignInVC.swift in Sources */,
+				264713822473F40900874B4F /* CountryAndLanguage.swift in Sources */,
+				26B8276524534D31007FC104 /* SignInViewController.swift in Sources */,
 				260D9140244890FA0081E089 /* APIFile.swift in Sources */,
+				264713802473F34000874B4F /* Employee.swift in Sources */,
+				264713862473FDE100874B4F /* EmployeesViewController.swift in Sources */,
 				260D913F244890F60081E089 /* LanguageListTableViewCell.swift in Sources */,
 				260D913E244890F10081E089 /* CountryListTableViewCell.swift in Sources */,
-				26B8276324534D21007FC104 /* JoinVC.swift in Sources */,
+				26B8276324534D21007FC104 /* JoinViewController.swift in Sources */,
 				260D913D244890EE0081E089 /* SelectedCountryAndLanguageVC.swift in Sources */,
 				260D913C244890E10081E089 /* LanguageTableCell.swift in Sources */,
-				2631E3B4246DB97000FE8E90 /* LocationVC.swift in Sources */,
+				2631E3B4246DB97000FE8E90 /* LocationViewController.swift in Sources */,
 				260D913B244890DD0081E089 /* CountryTableCell.swift in Sources */,
-				26F27B62246EBABD00CCEDB2 /* EmployeeDataVC.swift in Sources */,
 				260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */,
-				260D9135244890D00081E089 /* HomeVC.swift in Sources */,
-				260D9136244890D00081E089 /* CategoriesVC.swift in Sources */,
-				260D9137244890D00081E089 /* MyCartVC.swift in Sources */,
-				260D9138244890D00081E089 /* WishListVC.swift in Sources */,
-				260D9139244890D00081E089 /* AccountVC.swift in Sources */,
+				260D9135244890D00081E089 /* HomeViewController.swift in Sources */,
+				260D9137244890D00081E089 /* FavouriteViewController.swift in Sources */,
+				260D9138244890D00081E089 /* ChatViewController.swift in Sources */,
+				260D9139244890D00081E089 /* AccountViewController.swift in Sources */,
 				2665E57E247087E50055037F /* EmployeeInfoTableViewCell.swift in Sources */,
 				260D9134244890BE0081E089 /* AppDelegate.swift in Sources */,
 				260D91422448910B0081E089 /* MainApp.xcdatamodeld in Sources */,

@@ -9,6 +9,9 @@ target 'MainApp' do
 
 pod 'Alamofire'
 
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+
   target 'MainAppTests' do
     inherit! :search_paths
     # Pods for testing

@@ -20,7 +20,6 @@
 		260D913D244890EE0081E089 /* SelectedCountryAndLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */; };
 		260D913E244890F10081E089 /* CountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664517024438401005623E0 /* CountryListTableViewCell.swift */; };
 		260D913F244890F60081E089 /* LanguageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451742443841D005623E0 /* LanguageListTableViewCell.swift */; };
-		260D9140244890FA0081E089 /* APIFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AAEE53244878B4008C19CF /* APIFile.swift */; };
 		260D9141244890FF0081E089 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D02425387F00C9E095 /* SceneDelegate.swift */; };
 		260D91422448910B0081E089 /* MainApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D72425387F00C9E095 /* MainApp.xcdatamodeld */; };
 		261CF1D62425387F00C9E095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1D42425387F00C9E095 /* Main.storyboard */; };
@@ -30,17 +29,21 @@
 		2631E3B4246DB97000FE8E90 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631E3B3246DB97000FE8E90 /* LocationViewController.swift */; };
 		264713802473F34000874B4F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647137F2473F34000874B4F /* Employee.swift */; };
 		264713822473F40900874B4F /* CountryAndLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713812473F40900874B4F /* CountryAndLanguage.swift */; };
-		264713862473FDE100874B4F /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713852473FDE100874B4F /* EmployeesViewController.swift */; };
+		264713862473FDE100874B4F /* EmployeesCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713852473FDE100874B4F /* EmployeesCardViewController.swift */; };
 		265A5BA22453612600DD7312 /* MainAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265A5BA12453612500DD7312 /* MainAppTests.swift */; };
 		266451642441F074005623E0 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451622441F074005623E0 /* AccountTableViewCell.xib */; };
 		266451682443421A005623E0 /* CountryTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451662443421A005623E0 /* CountryTableCell.xib */; };
 		2664516C24434235005623E0 /* LanguageTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2664516A24434235005623E0 /* LanguageTableCell.xib */; };
 		2664517324438401005623E0 /* CountryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2664517124438401005623E0 /* CountryListTableViewCell.xib */; };
 		266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451752443841D005623E0 /* LanguageListTableViewCell.xib */; };
-		2665E57E247087E50055037F /* EmployeeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665E57C247087E50055037F /* EmployeeInfoTableViewCell.swift */; };
-		2665E57F247087E50055037F /* EmployeeInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2665E57D247087E50055037F /* EmployeeInfoTableViewCell.xib */; };
+		2665E57E247087E50055037F /* EmployeeCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665E57C247087E50055037F /* EmployeeCardTableViewCell.swift */; };
+		2665E57F247087E50055037F /* EmployeeCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2665E57D247087E50055037F /* EmployeeCardTableViewCell.xib */; };
 		26B8276324534D21007FC104 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276224534D21007FC104 /* JoinViewController.swift */; };
 		26B8276524534D31007FC104 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276424534D31007FC104 /* SignInViewController.swift */; };
+		26C53BDF2474743F007FA16A /* EmployeeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C53BDD2474743F007FA16A /* EmployeeListTableViewCell.swift */; };
+		26C53BE02474743F007FA16A /* EmployeeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26C53BDE2474743F007FA16A /* EmployeeListTableViewCell.xib */; };
+		26C53BE224747715007FA16A /* EmployeesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C53BE124747715007FA16A /* EmployeesListViewController.swift */; };
+		26C53BE4247477C0007FA16A /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C53BE3247477C0007FA16A /* EmployeesViewController.swift */; };
 		34782F17A165C5E91A61205F /* Pods_MainApp_MainAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8577A90F97FA107DD7E1AFD6 /* Pods_MainApp_MainAppUITests.framework */; };
 		5D433534F74A70264D86F911 /* Pods_MainAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BB8C275207D038611F8B5E /* Pods_MainAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -81,7 +84,7 @@
 		2631E3B3246DB97000FE8E90 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		2647137F2473F34000874B4F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		264713812473F40900874B4F /* CountryAndLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndLanguage.swift; sourceTree = "<group>"; };
-		264713852473FDE100874B4F /* EmployeesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
+		264713852473FDE100874B4F /* EmployeesCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesCardViewController.swift; sourceTree = "<group>"; };
 		265A5BA02453612500DD7312 /* MainAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MainAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		265A5BA12453612500DD7312 /* MainAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppTests.swift; sourceTree = "<group>"; };
 		266451582441E543005623E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -98,11 +101,14 @@
 		266451742443841D005623E0 /* LanguageListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageListTableViewCell.swift; sourceTree = "<group>"; };
 		266451752443841D005623E0 /* LanguageListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageListTableViewCell.xib; sourceTree = "<group>"; };
 		266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountryAndLanguageVC.swift; sourceTree = "<group>"; };
-		2665E57C247087E50055037F /* EmployeeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeInfoTableViewCell.swift; sourceTree = "<group>"; };
-		2665E57D247087E50055037F /* EmployeeInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeInfoTableViewCell.xib; sourceTree = "<group>"; };
-		26AAEE53244878B4008C19CF /* APIFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFile.swift; sourceTree = "<group>"; };
+		2665E57C247087E50055037F /* EmployeeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardTableViewCell.swift; sourceTree = "<group>"; };
+		2665E57D247087E50055037F /* EmployeeCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCardTableViewCell.xib; sourceTree = "<group>"; };
 		26B8276224534D21007FC104 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		26B8276424534D31007FC104 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		26C53BDD2474743F007FA16A /* EmployeeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewCell.swift; sourceTree = "<group>"; };
+		26C53BDE2474743F007FA16A /* EmployeeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListTableViewCell.xib; sourceTree = "<group>"; };
+		26C53BE124747715007FA16A /* EmployeesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListViewController.swift; sourceTree = "<group>"; };
+		26C53BE3247477C0007FA16A /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		44B8932FF45C3E030F54A19F /* Pods-MainApp-MainAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-MainAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8577A90F97FA107DD7E1AFD6 /* Pods_MainApp_MainAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MainApp_MainAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3231E38A1A373E52F18569 /* Pods-MainApp-MainAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainApp-MainAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MainApp-MainAppUITests/Pods-MainApp-MainAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,7 +177,6 @@
 				261CF1CE2425387F00C9E095 /* AppDelegate.swift */,
 				261CF1D02425387F00C9E095 /* SceneDelegate.swift */,
 				261CF1D42425387F00C9E095 /* Main.storyboard */,
-				26AAEE53244878B4008C19CF /* APIFile.swift */,
 				2647137E2473F30400874B4F /* Data Model */,
 				2664515E2441E593005623E0 /* TabBar Item */,
 				261CF1DA2425388200C9E095 /* Assets.xcassets */,
@@ -311,9 +316,13 @@
 		26F27B60246EBA8E00CCEDB2 /* EmplyeeData */ = {
 			isa = PBXGroup;
 			children = (
-				264713852473FDE100874B4F /* EmployeesViewController.swift */,
-				2665E57C247087E50055037F /* EmployeeInfoTableViewCell.swift */,
-				2665E57D247087E50055037F /* EmployeeInfoTableViewCell.xib */,
+				26C53BE3247477C0007FA16A /* EmployeesViewController.swift */,
+				264713852473FDE100874B4F /* EmployeesCardViewController.swift */,
+				2665E57C247087E50055037F /* EmployeeCardTableViewCell.swift */,
+				2665E57D247087E50055037F /* EmployeeCardTableViewCell.xib */,
+				26C53BE124747715007FA16A /* EmployeesListViewController.swift */,
+				26C53BDD2474743F007FA16A /* EmployeeListTableViewCell.swift */,
+				26C53BDE2474743F007FA16A /* EmployeeListTableViewCell.xib */,
 			);
 			path = EmplyeeData;
 			sourceTree = "<group>";
@@ -456,8 +465,9 @@
 				261CF1DE2425388200C9E095 /* LaunchScreen.storyboard in Resources */,
 				266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */,
 				266451642441F074005623E0 /* AccountTableViewCell.xib in Resources */,
+				26C53BE02474743F007FA16A /* EmployeeListTableViewCell.xib in Resources */,
 				2664516C24434235005623E0 /* LanguageTableCell.xib in Resources */,
-				2665E57F247087E50055037F /* EmployeeInfoTableViewCell.xib in Resources */,
+				2665E57F247087E50055037F /* EmployeeCardTableViewCell.xib in Resources */,
 				2664517324438401005623E0 /* CountryListTableViewCell.xib in Resources */,
 				261CF1DB2425388200C9E095 /* Assets.xcassets in Resources */,
 				261CF1D62425387F00C9E095 /* Main.storyboard in Resources */,
@@ -625,10 +635,11 @@
 			files = (
 				260D9141244890FF0081E089 /* SceneDelegate.swift in Sources */,
 				264713822473F40900874B4F /* CountryAndLanguage.swift in Sources */,
+				26C53BDF2474743F007FA16A /* EmployeeListTableViewCell.swift in Sources */,
 				26B8276524534D31007FC104 /* SignInViewController.swift in Sources */,
-				260D9140244890FA0081E089 /* APIFile.swift in Sources */,
 				264713802473F34000874B4F /* Employee.swift in Sources */,
-				264713862473FDE100874B4F /* EmployeesViewController.swift in Sources */,
+				26C53BE224747715007FA16A /* EmployeesListViewController.swift in Sources */,
+				264713862473FDE100874B4F /* EmployeesCardViewController.swift in Sources */,
 				260D913F244890F60081E089 /* LanguageListTableViewCell.swift in Sources */,
 				260D913E244890F10081E089 /* CountryListTableViewCell.swift in Sources */,
 				26B8276324534D21007FC104 /* JoinViewController.swift in Sources */,
@@ -639,9 +650,10 @@
 				260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */,
 				260D9135244890D00081E089 /* HomeViewController.swift in Sources */,
 				260D9137244890D00081E089 /* FavouriteViewController.swift in Sources */,
+				26C53BE4247477C0007FA16A /* EmployeesViewController.swift in Sources */,
 				260D9138244890D00081E089 /* ChatViewController.swift in Sources */,
 				260D9139244890D00081E089 /* AccountViewController.swift in Sources */,
-				2665E57E247087E50055037F /* EmployeeInfoTableViewCell.swift in Sources */,
+				2665E57E247087E50055037F /* EmployeeCardTableViewCell.swift in Sources */,
 				260D9134244890BE0081E089 /* AppDelegate.swift in Sources */,
 				260D91422448910B0081E089 /* MainApp.xcdatamodeld in Sources */,
 				260D9133244890B90081E089 /* ViewController.swift in Sources */,

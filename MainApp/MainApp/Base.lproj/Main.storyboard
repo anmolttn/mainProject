@@ -34,16 +34,16 @@
             </objects>
             <point key="canvasLocation" x="7975" y="1750"/>
         </scene>
-        <!--Employees View Controller-->
+        <!--Employees Card View Controller-->
         <scene sceneID="CMG-dm-Big">
             <objects>
-                <viewController storyboardIdentifier="EmployeesViewController" id="OZ1-S2-j2g" customClass="EmployeesViewController" customModule="MainApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmployeesCardViewController" id="OZ1-S2-j2g" customClass="EmployeesCardViewController" customModule="MainApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bi5-hP-Va2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="674"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EEK-Pq-uF7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="630"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPA-oD-txy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324.6376811594205" y="943.52678571428567"/>
+            <point key="canvasLocation" x="1965" y="1649"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="hqR-G5-V7A">
@@ -392,20 +392,93 @@
             </objects>
             <point key="canvasLocation" x="-617.39130434782612" y="906.69642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Employees List View Controller-->
+        <scene sceneID="5gJ-Ty-LQL">
+            <objects>
+                <viewController storyboardIdentifier="EmployeesListViewController" id="WVJ-yw-eHO" customClass="EmployeesListViewController" customModule="MainApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdm-ck-wwo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="674"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iNf-6J-eNF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="630"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vcf-6h-YGD" firstAttribute="bottom" secondItem="iNf-6J-eNF" secondAttribute="bottom" id="Mxj-Dh-eLs"/>
+                            <constraint firstItem="iNf-6J-eNF" firstAttribute="leading" secondItem="vcf-6h-YGD" secondAttribute="leading" id="idJ-aT-pCD"/>
+                            <constraint firstItem="vcf-6h-YGD" firstAttribute="trailing" secondItem="iNf-6J-eNF" secondAttribute="trailing" id="lF5-RE-lty"/>
+                            <constraint firstItem="iNf-6J-eNF" firstAttribute="top" secondItem="vcf-6h-YGD" secondAttribute="top" id="mWc-zh-R7j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vcf-6h-YGD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P4f-v5-DWP"/>
+                    <connections>
+                        <outlet property="employeeTableView" destination="iNf-6J-eNF" id="kO4-l4-esc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncb-Ha-c32" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="1649"/>
+        </scene>
+        <!--Employees View Controller-->
         <scene sceneID="CyS-5O-Y66">
             <objects>
-                <viewController id="ITw-cC-kRc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmployeesViewController" id="ITw-cC-kRc" customClass="EmployeesViewController" customModule="MainApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LF0-mh-awo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W1c-7D-sx8">
+                                <rect key="frame" x="20" y="98" width="374" height="32"/>
+                                <segments>
+                                    <segment title="List View"/>
+                                    <segment title="Card View"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlAction:" destination="ITw-cC-kRc" eventType="valueChanged" id="nlf-fa-8bW"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnd-86-PzC" userLabel="Detail Container View">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <connections>
+                                    <segue destination="OZ1-S2-j2g" kind="embed" id="WaC-vX-PSm"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZT-Yg-g0r" userLabel="List Container View">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <connections>
+                                    <segue destination="WVJ-yw-eHO" kind="embed" id="dOE-jk-4Q9"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W1c-7D-sx8" firstAttribute="top" secondItem="M97-wG-q7P" secondAttribute="top" constant="10" id="8Wc-cy-zTC"/>
+                            <constraint firstItem="W1c-7D-sx8" firstAttribute="leading" secondItem="M97-wG-q7P" secondAttribute="leading" constant="20" id="8xF-28-0gk"/>
+                            <constraint firstItem="M97-wG-q7P" firstAttribute="trailing" secondItem="eZT-Yg-g0r" secondAttribute="trailing" id="ZI6-1i-xpf"/>
+                            <constraint firstItem="Bnd-86-PzC" firstAttribute="top" secondItem="W1c-7D-sx8" secondAttribute="bottom" constant="10" id="ZS8-zG-0pb"/>
+                            <constraint firstItem="M97-wG-q7P" firstAttribute="bottom" secondItem="Bnd-86-PzC" secondAttribute="bottom" id="lZ2-UO-HOu"/>
+                            <constraint firstItem="eZT-Yg-g0r" firstAttribute="top" secondItem="W1c-7D-sx8" secondAttribute="bottom" constant="10" id="mt0-Na-xkB"/>
+                            <constraint firstItem="Bnd-86-PzC" firstAttribute="leading" secondItem="M97-wG-q7P" secondAttribute="leading" id="oVX-cq-GDQ"/>
+                            <constraint firstItem="eZT-Yg-g0r" firstAttribute="leading" secondItem="M97-wG-q7P" secondAttribute="leading" id="pFW-iw-1fQ"/>
+                            <constraint firstItem="M97-wG-q7P" firstAttribute="bottom" secondItem="eZT-Yg-g0r" secondAttribute="bottom" id="scr-58-Wk0"/>
+                            <constraint firstItem="M97-wG-q7P" firstAttribute="trailing" secondItem="W1c-7D-sx8" secondAttribute="trailing" constant="20" id="wdF-xS-xXE"/>
+                            <constraint firstItem="M97-wG-q7P" firstAttribute="trailing" secondItem="Bnd-86-PzC" secondAttribute="trailing" id="ydq-BX-w4A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="M97-wG-q7P"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OZn-Iy-DVU"/>
+                    <connections>
+                        <outlet property="EmployeeCardView" destination="eZT-Yg-g0r" id="E9v-LG-iE0"/>
+                        <outlet property="EmployeeListView" destination="eZT-Yg-g0r" id="hon-TS-wVI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9w2-Mh-bjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-617" y="1650"/>
+            <point key="canvasLocation" x="1325" y="907"/>
         </scene>
         <!--Favourite View Controller-->
         <scene sceneID="oOR-yK-Jw8">
@@ -576,7 +649,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OZ1-S2-j2g" kind="relationship" relationship="rootViewController" id="1w6-eM-3Kq"/>
+                        <segue destination="ITw-cC-kRc" kind="relationship" relationship="rootViewController" id="Kec-K4-YXM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J76-uF-7N0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

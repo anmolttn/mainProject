@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class EmployeeInfoTableViewCell: UITableViewCell {
+class EmployeeCardTableViewCell: UITableViewCell {
 
     @IBOutlet weak var empImage: UIImageView!
     @IBOutlet weak var empID: UILabel!

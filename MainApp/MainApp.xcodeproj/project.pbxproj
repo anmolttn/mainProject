@@ -27,6 +27,18 @@
 		261CF1DE2425388200C9E095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 261CF1DC2425388200C9E095 /* LaunchScreen.storyboard */; };
 		261CF1F42425388300C9E095 /* MainAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1F32425388300C9E095 /* MainAppUITests.swift */; };
 		2631E3B4246DB97000FE8E90 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631E3B3246DB97000FE8E90 /* LocationViewController.swift */; };
+		263A59322475162B00E5EDCF /* MovieTrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A59302475162B00E5EDCF /* MovieTrendingTableViewCell.swift */; };
+		263A59332475162B00E5EDCF /* MovieTrendingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263A59312475162B00E5EDCF /* MovieTrendingTableViewCell.xib */; };
+		263A593624751E0200E5EDCF /* MovieListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A593424751E0200E5EDCF /* MovieListCollectionViewCell.swift */; };
+		263A593724751E0200E5EDCF /* MovieListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263A593524751E0200E5EDCF /* MovieListCollectionViewCell.xib */; };
+		263A593A2475261B00E5EDCF /* ActorNameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A59382475261B00E5EDCF /* ActorNameCollectionViewCell.swift */; };
+		263A593B2475261B00E5EDCF /* ActorNameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263A59392475261B00E5EDCF /* ActorNameCollectionViewCell.xib */; };
+		263A593E24752A5800E5EDCF /* ActorNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A593C24752A5800E5EDCF /* ActorNameTableViewCell.swift */; };
+		263A593F24752A5800E5EDCF /* ActorNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263A593D24752A5800E5EDCF /* ActorNameTableViewCell.xib */; };
+		263A59412475536500E5EDCF /* MoviesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A59402475536500E5EDCF /* MoviesData.swift */; };
+		263A59432475860200E5EDCF /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A59422475860200E5EDCF /* PracticeViewController.swift */; };
+		263A594624758E6100E5EDCF /* PracticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A594424758E6100E5EDCF /* PracticeTableViewCell.swift */; };
+		263A594724758E6100E5EDCF /* PracticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263A594524758E6100E5EDCF /* PracticeTableViewCell.xib */; };
 		264713802473F34000874B4F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647137F2473F34000874B4F /* Employee.swift */; };
 		264713822473F40900874B4F /* CountryAndLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713812473F40900874B4F /* CountryAndLanguage.swift */; };
 		264713862473FDE100874B4F /* EmployeesCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264713852473FDE100874B4F /* EmployeesCardViewController.swift */; };
@@ -38,6 +50,7 @@
 		266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266451752443841D005623E0 /* LanguageListTableViewCell.xib */; };
 		2665E57E247087E50055037F /* EmployeeCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665E57C247087E50055037F /* EmployeeCardTableViewCell.swift */; };
 		2665E57F247087E50055037F /* EmployeeCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2665E57D247087E50055037F /* EmployeeCardTableViewCell.xib */; };
+		268E577E2476CAB300288379 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268E577D2476CAB300288379 /* ApiManager.swift */; };
 		26B8276324534D21007FC104 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276224534D21007FC104 /* JoinViewController.swift */; };
 		26B8276524534D31007FC104 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B8276424534D31007FC104 /* SignInViewController.swift */; };
 		26C53BDF2474743F007FA16A /* EmployeeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C53BDD2474743F007FA16A /* EmployeeListTableViewCell.swift */; };
@@ -82,6 +95,18 @@
 		261CF1F52425388300C9E095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261CF201242539FC00C9E095 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2631E3B3246DB97000FE8E90 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		263A59302475162B00E5EDCF /* MovieTrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTrendingTableViewCell.swift; sourceTree = "<group>"; };
+		263A59312475162B00E5EDCF /* MovieTrendingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTrendingTableViewCell.xib; sourceTree = "<group>"; };
+		263A593424751E0200E5EDCF /* MovieListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCollectionViewCell.swift; sourceTree = "<group>"; };
+		263A593524751E0200E5EDCF /* MovieListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListCollectionViewCell.xib; sourceTree = "<group>"; };
+		263A59382475261B00E5EDCF /* ActorNameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNameCollectionViewCell.swift; sourceTree = "<group>"; };
+		263A59392475261B00E5EDCF /* ActorNameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorNameCollectionViewCell.xib; sourceTree = "<group>"; };
+		263A593C24752A5800E5EDCF /* ActorNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNameTableViewCell.swift; sourceTree = "<group>"; };
+		263A593D24752A5800E5EDCF /* ActorNameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorNameTableViewCell.xib; sourceTree = "<group>"; };
+		263A59402475536500E5EDCF /* MoviesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesData.swift; sourceTree = "<group>"; };
+		263A59422475860200E5EDCF /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		263A594424758E6100E5EDCF /* PracticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCell.swift; sourceTree = "<group>"; };
+		263A594524758E6100E5EDCF /* PracticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTableViewCell.xib; sourceTree = "<group>"; };
 		2647137F2473F34000874B4F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		264713812473F40900874B4F /* CountryAndLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAndLanguage.swift; sourceTree = "<group>"; };
 		264713852473FDE100874B4F /* EmployeesCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesCardViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +128,7 @@
 		266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountryAndLanguageVC.swift; sourceTree = "<group>"; };
 		2665E57C247087E50055037F /* EmployeeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCardTableViewCell.swift; sourceTree = "<group>"; };
 		2665E57D247087E50055037F /* EmployeeCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCardTableViewCell.xib; sourceTree = "<group>"; };
+		268E577D2476CAB300288379 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		26B8276224534D21007FC104 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		26B8276424534D31007FC104 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		26C53BDD2474743F007FA16A /* EmployeeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewCell.swift; sourceTree = "<group>"; };
@@ -176,6 +202,7 @@
 				261CF1D22425387F00C9E095 /* ViewController.swift */,
 				261CF1CE2425387F00C9E095 /* AppDelegate.swift */,
 				261CF1D02425387F00C9E095 /* SceneDelegate.swift */,
+				268E577D2476CAB300288379 /* ApiManager.swift */,
 				261CF1D42425387F00C9E095 /* Main.storyboard */,
 				2647137E2473F30400874B4F /* Data Model */,
 				2664515E2441E593005623E0 /* TabBar Item */,
@@ -253,6 +280,10 @@
 			children = (
 				2647137F2473F34000874B4F /* Employee.swift */,
 				264713812473F40900874B4F /* CountryAndLanguage.swift */,
+				263A59402475536500E5EDCF /* MoviesData.swift */,
+				263A59422475860200E5EDCF /* PracticeViewController.swift */,
+				263A594424758E6100E5EDCF /* PracticeTableViewCell.swift */,
+				263A594524758E6100E5EDCF /* PracticeTableViewCell.xib */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -260,8 +291,8 @@
 		2664515E2441E593005623E0 /* TabBar Item */ = {
 			isa = PBXGroup;
 			children = (
-				26F27B60246EBA8E00CCEDB2 /* EmplyeeData */,
 				26DCBBB8246C141000E0EBFA /* Home */,
+				26F27B60246EBA8E00CCEDB2 /* EmplyeeData */,
 				2664515F2441E66B005623E0 /* FavouriteViewController.swift */,
 				2664515C2441E58D005623E0 /* ChatViewController.swift */,
 				26B8276124534CC5007FC104 /* Account */,
@@ -278,7 +309,7 @@
 			path = AccountTableViewCell;
 			sourceTree = "<group>";
 		};
-		2664517A2443B67C005623E0 /* ListOfCountryAndLanguage */ = {
+		2664517A2443B67C005623E0 /* CountryAndLanguage */ = {
 			isa = PBXGroup;
 			children = (
 				266451782443845B005623E0 /* SelectedCountryAndLanguageVC.swift */,
@@ -287,7 +318,7 @@
 				266451742443841D005623E0 /* LanguageListTableViewCell.swift */,
 				266451752443841D005623E0 /* LanguageListTableViewCell.xib */,
 			);
-			path = ListOfCountryAndLanguage;
+			path = CountryAndLanguage;
 			sourceTree = "<group>";
 		};
 		26B8276124534CC5007FC104 /* Account */ = {
@@ -298,7 +329,7 @@
 				2631E3B0246DB79200FE8E90 /* Location */,
 				2631E3AD246DB69C00FE8E90 /* SignIn */,
 				2631E3AE246DB6AF00FE8E90 /* Join */,
-				2664517A2443B67C005623E0 /* ListOfCountryAndLanguage */,
+				2664517A2443B67C005623E0 /* CountryAndLanguage */,
 				2631E3AF246DB6F500FE8E90 /* Country & Language TableViewCell */,
 				2631E3B2246DB7FD00FE8E90 /* AboutUs */,
 			);
@@ -309,6 +340,14 @@
 			isa = PBXGroup;
 			children = (
 				266451582441E543005623E0 /* HomeViewController.swift */,
+				263A59302475162B00E5EDCF /* MovieTrendingTableViewCell.swift */,
+				263A59312475162B00E5EDCF /* MovieTrendingTableViewCell.xib */,
+				263A593424751E0200E5EDCF /* MovieListCollectionViewCell.swift */,
+				263A593524751E0200E5EDCF /* MovieListCollectionViewCell.xib */,
+				263A593C24752A5800E5EDCF /* ActorNameTableViewCell.swift */,
+				263A593D24752A5800E5EDCF /* ActorNameTableViewCell.xib */,
+				263A59382475261B00E5EDCF /* ActorNameCollectionViewCell.swift */,
+				263A59392475261B00E5EDCF /* ActorNameCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -465,13 +504,18 @@
 				261CF1DE2425388200C9E095 /* LaunchScreen.storyboard in Resources */,
 				266451772443841D005623E0 /* LanguageListTableViewCell.xib in Resources */,
 				266451642441F074005623E0 /* AccountTableViewCell.xib in Resources */,
+				263A594724758E6100E5EDCF /* PracticeTableViewCell.xib in Resources */,
+				263A593724751E0200E5EDCF /* MovieListCollectionViewCell.xib in Resources */,
 				26C53BE02474743F007FA16A /* EmployeeListTableViewCell.xib in Resources */,
+				263A593B2475261B00E5EDCF /* ActorNameCollectionViewCell.xib in Resources */,
+				263A593F24752A5800E5EDCF /* ActorNameTableViewCell.xib in Resources */,
 				2664516C24434235005623E0 /* LanguageTableCell.xib in Resources */,
 				2665E57F247087E50055037F /* EmployeeCardTableViewCell.xib in Resources */,
 				2664517324438401005623E0 /* CountryListTableViewCell.xib in Resources */,
 				261CF1DB2425388200C9E095 /* Assets.xcassets in Resources */,
 				261CF1D62425387F00C9E095 /* Main.storyboard in Resources */,
 				266451682443421A005623E0 /* CountryTableCell.xib in Resources */,
+				263A59332475162B00E5EDCF /* MovieTrendingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,26 +677,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268E577E2476CAB300288379 /* ApiManager.swift in Sources */,
 				260D9141244890FF0081E089 /* SceneDelegate.swift in Sources */,
 				264713822473F40900874B4F /* CountryAndLanguage.swift in Sources */,
 				26C53BDF2474743F007FA16A /* EmployeeListTableViewCell.swift in Sources */,
+				263A59432475860200E5EDCF /* PracticeViewController.swift in Sources */,
 				26B8276524534D31007FC104 /* SignInViewController.swift in Sources */,
 				264713802473F34000874B4F /* Employee.swift in Sources */,
 				26C53BE224747715007FA16A /* EmployeesListViewController.swift in Sources */,
 				264713862473FDE100874B4F /* EmployeesCardViewController.swift in Sources */,
 				260D913F244890F60081E089 /* LanguageListTableViewCell.swift in Sources */,
+				263A593E24752A5800E5EDCF /* ActorNameTableViewCell.swift in Sources */,
 				260D913E244890F10081E089 /* CountryListTableViewCell.swift in Sources */,
+				263A59322475162B00E5EDCF /* MovieTrendingTableViewCell.swift in Sources */,
 				26B8276324534D21007FC104 /* JoinViewController.swift in Sources */,
 				260D913D244890EE0081E089 /* SelectedCountryAndLanguageVC.swift in Sources */,
 				260D913C244890E10081E089 /* LanguageTableCell.swift in Sources */,
 				2631E3B4246DB97000FE8E90 /* LocationViewController.swift in Sources */,
 				260D913B244890DD0081E089 /* CountryTableCell.swift in Sources */,
+				263A59412475536500E5EDCF /* MoviesData.swift in Sources */,
 				260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */,
 				260D9135244890D00081E089 /* HomeViewController.swift in Sources */,
 				260D9137244890D00081E089 /* FavouriteViewController.swift in Sources */,
+				263A593A2475261B00E5EDCF /* ActorNameCollectionViewCell.swift in Sources */,
 				26C53BE4247477C0007FA16A /* EmployeesViewController.swift in Sources */,
 				260D9138244890D00081E089 /* ChatViewController.swift in Sources */,
 				260D9139244890D00081E089 /* AccountViewController.swift in Sources */,
+				263A594624758E6100E5EDCF /* PracticeTableViewCell.swift in Sources */,
+				263A593624751E0200E5EDCF /* MovieListCollectionViewCell.swift in Sources */,
 				2665E57E247087E50055037F /* EmployeeCardTableViewCell.swift in Sources */,
 				260D9134244890BE0081E089 /* AppDelegate.swift in Sources */,
 				260D91422448910B0081E089 /* MainApp.xcdatamodeld in Sources */,

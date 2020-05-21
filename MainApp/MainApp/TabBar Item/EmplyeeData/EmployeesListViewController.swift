@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class EmployeesListViewController: UIViewController {
 
@@ -24,29 +23,39 @@ class EmployeesListViewController: UIViewController {
         let nib = UINib(nibName: "EmployeeListTableViewCell", bundle: nil)
         employeeTableView.register(nib, forCellReuseIdentifier: "empListCell")
 
-        getEmployeeData()
+        //call the api function
+        getEmployeeData{
+            self.employeeTableView.reloadData()
+        }
     }
-      
-        //function to get the employee data
-        func getEmployeeData(){
-        AF.request("http://dummy.restapiexample.com/api/v1/employees", method: .get, parameters: nil, encoding: URLEncoding.default)
-            .responseData { [weak self] response in
-                switch response.result{
-                case .failure(let error):
-                    print(error.localizedDescription)
-                case .success(let data):
-                    do{
+    
+    //function to get the employee data
+    func getEmployeeData(completionBlock : @escaping () -> ()){
+        _ = URLSessionConfiguration.default
+            let request = URLRequest(url: URL(string:"http://dummy.restapiexample.com/api/v1/employees")!)
+        _ = URLSession.shared.dataTask(with: request) { [ weak self ] (data, response, error) in
+            guard let data = data , let _ = response as? HTTPURLResponse else{
+                    return
+                }
+                do{
+                    if error == nil{
                         let decoder = JSONDecoder()
-                        decoder.keyDecodingStrategy = .useDefaultKeys
+                        //decoder.keyDecodingStrategy = .useDefaultKeys
                         let employeeData = try decoder.decode(Employees.self, from: data)
                         self?.empArray = employeeData
-                        print("data show of lisyt view")
-                    }catch{
-                        print(error.localizedDescription)
+                        print("data show of List view")
+                        //print("empdata --- >>>>",employeeData)
+                        //print("emparray data --"self.empArray)
+                    }
+                    DispatchQueue.main.async {
+                        completionBlock()
                     }
                 }
-                self?.employeeTableView.reloadData()
-            }
+                catch{
+                    print(error.localizedDescription)
+                }
+            }.resume()
+            self.employeeTableView.reloadData()
         }
     }
 

@@ -30,7 +30,9 @@ class SelectedCountryAndLanguageVC: UIViewController {
         super.viewDidLoad()
         
         //call the api function
-        getCountriesData()
+        getCountriesData{
+            self.selectTableViewOutlet.reloadData()
+        }
     
         //delegate and data source of table view
         selectTableViewOutlet.delegate = self
@@ -44,16 +46,8 @@ class SelectedCountryAndLanguageVC: UIViewController {
         selectTableViewOutlet.register(nib1, forCellReuseIdentifier: "LanguageListTableViewCell")
 
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        selectTableViewOutlet.reloadData()
-        viewWillLayoutSubviews()
-    }
-    
-         func getCountriesData(){
+        func getCountriesData(completionBlock : @escaping () -> ()){
             print("function called")
-            _ = URLSessionConfiguration.default
             //createing a session
             _ = URLSession(configuration: .default)
             //creting the request
@@ -67,11 +61,14 @@ class SelectedCountryAndLanguageVC: UIViewController {
                 do{
                 if error == nil{
                     print("no error")
-                        let countriesName = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [String : String]
+                    let countriesName = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [String : String]
                     let sortedCountriesName = countriesName?.sorted{ $0.1 < $1.1 }
                     for (key , value) in sortedCountriesName!{
                         self?.countries.append(CountryItem(countryName: value, countryImage: key))
                         }
+                    }
+                    DispatchQueue.main.async {
+                        completionBlock()
                     }
             }
                 catch{

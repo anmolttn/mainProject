@@ -22,7 +22,8 @@ class SignInViewController: UIViewController {
     @IBAction func tappedSignUpBtn(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "JoinVC") as! JoinViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
+        //self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tappedLogInBtn(_ sender: Any) {

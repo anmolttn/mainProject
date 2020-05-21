@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-
 
 class EmployeesCardViewController: UIViewController {
         
@@ -25,31 +23,40 @@ class EmployeesCardViewController: UIViewController {
         let nib = UINib(nibName: "EmployeeCardTableViewCell", bundle: nil)
         employeeDataTableView.register(nib, forCellReuseIdentifier: "empDetailCell")
 
-        getEmployeeData()
+        //call the api function
+        getEmployeeData{
+            self.employeeDataTableView.reloadData()
+            
+        }
     }
     
     //function to get the employee data
-    func getEmployeeData(){
-    AF.request("http://dummy.restapiexample.com/api/v1/employees", method: .get, parameters: nil, encoding: URLEncoding.default)
-        .responseData { [weak self] response in
-            switch response.result{
-            case .failure(let error):
-                print(error.localizedDescription)
-            case .success(let data):
-                do{
+    func getEmployeeData(completionBlock : @escaping () -> ()){
+        _ = URLSessionConfiguration.default
+        let request = URLRequest(url: URL(string:"http://dummy.restapiexample.com/api/v1/employees")!)
+        _ = URLSession.shared.dataTask(with: request) { [ weak self ] (data, response, error) in
+            guard let data = data , let _ = response as? HTTPURLResponse else{
+                return
+            }
+            do{
+                if error == nil{
                     let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .useDefaultKeys
+                    //decoder.keyDecodingStrategy = .useDefaultKeys
                     let employeeData = try decoder.decode(Employees.self, from: data)
                     self?.empArray = employeeData
                     print("data show of card view")
                     //print("empdata --- >>>>",employeeData)
                     //print("emparray data --"self.empArray)
-                }catch{
-                    print(error.localizedDescription)
+                    DispatchQueue.main.async {
+                        completionBlock()
+                    }
                 }
             }
-            self?.employeeDataTableView.reloadData()
-        }
+            catch{
+                print(error.localizedDescription)
+            }
+        }.resume()
+        self.employeeDataTableView.reloadData()
     }
 }
 

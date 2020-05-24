@@ -60,3 +60,23 @@ struct MoviesData : Codable {
         case totaResults = "total_results"
     }
 }
+
+struct HomeSection {
+    static let trending = 0
+    static let popular = 1
+    static let bestDrama = 2
+    //static let toprated = 3
+    //static let upcoming = 4
+}
+
+
+
+//protocol for country data
+public protocol MovieProtocol{
+    
+    func passPosterImage(posterImage : String)
+    func passMovieTitle(movieTitle : String)
+    func passMovieDetail(movieOverView : String)
+    func passReleaseDate(movieReleaseDate : String)
+    
+}

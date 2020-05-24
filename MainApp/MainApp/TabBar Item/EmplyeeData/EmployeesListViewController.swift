@@ -11,6 +11,7 @@ import UIKit
 class EmployeesListViewController: UIViewController {
 
     var empArray : Employees?
+    let api = ApiStruct()
     
     @IBOutlet weak var employeeTableView: UITableView!
     
@@ -24,40 +25,19 @@ class EmployeesListViewController: UIViewController {
         employeeTableView.register(nib, forCellReuseIdentifier: "empListCell")
 
         //call the api function
-        getEmployeeData{
-            self.employeeTableView.reloadData()
-        }
+        getEmpData()
     }
     
     //function to get the employee data
-    func getEmployeeData(completionBlock : @escaping () -> ()){
-        _ = URLSessionConfiguration.default
-            let request = URLRequest(url: URL(string:"http://dummy.restapiexample.com/api/v1/employees")!)
-        _ = URLSession.shared.dataTask(with: request) { [ weak self ] (data, response, error) in
-            guard let data = data , let _ = response as? HTTPURLResponse else{
-                    return
-                }
-                do{
-                    if error == nil{
-                        let decoder = JSONDecoder()
-                        //decoder.keyDecodingStrategy = .useDefaultKeys
-                        let employeeData = try decoder.decode(Employees.self, from: data)
-                        self?.empArray = employeeData
-                        print("data show of List view")
-                        //print("empdata --- >>>>",employeeData)
-                        //print("emparray data --"self.empArray)
-                    }
-                    DispatchQueue.main.async {
-                        completionBlock()
-                    }
-                }
-                catch{
-                    print(error.localizedDescription)
-                }
-            }.resume()
-            self.employeeTableView.reloadData()
+    func getEmpData(){
+        api.getEmployeeData { [weak self] (response) in
+            if let response = response as? Employees{
+                self?.empArray = response
+            }
+            self?.employeeTableView.reloadData()
         }
     }
+}
 
     extension EmployeesListViewController : UITableViewDelegate, UITableViewDataSource{
         

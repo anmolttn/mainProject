@@ -14,6 +14,7 @@ class SelectedCountryAndLanguageVC: UIViewController {
     
     var countries : [CountryItem] = []
     var defaultImageForCountry = #imageLiteral(resourceName: "faq")
+    let api = ApiStruct()
 
     @IBOutlet weak var selectTableViewOutlet: UITableView!
     
@@ -30,9 +31,7 @@ class SelectedCountryAndLanguageVC: UIViewController {
         super.viewDidLoad()
         
         //call the api function
-        getCountriesData{
-            self.selectTableViewOutlet.reloadData()
-        }
+        getCountryData()
     
         //delegate and data source of table view
         selectTableViewOutlet.delegate = self
@@ -46,37 +45,16 @@ class SelectedCountryAndLanguageVC: UIViewController {
         selectTableViewOutlet.register(nib1, forCellReuseIdentifier: "LanguageListTableViewCell")
 
     }
-        func getCountriesData(completionBlock : @escaping () -> ()){
-            print("function called")
-            //createing a session
-            _ = URLSession(configuration: .default)
-            //creting the request
-            let request = URLRequest(url: URL(string: "https://raw.githubusercontent.com/hjnilsson/country-flags/master/countries.json")!)
-            //crete data task
-            _ = URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
-                print("teask created")
-                guard let data = data, let _ = response as? HTTPURLResponse else {
-                    return
-                }
-                do{
-                if error == nil{
-                    print("no error")
-                    let countriesName = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [String : String]
-                    let sortedCountriesName = countriesName?.sorted{ $0.1 < $1.1 }
-                    for (key , value) in sortedCountriesName!{
-                        self?.countries.append(CountryItem(countryName: value, countryImage: key))
-                        }
-                    }
-                    DispatchQueue.main.async {
-                        completionBlock()
-                    }
+    
+    
+    func getCountryData(){
+        api.getCountriesData { (response) in
+            if let response = response as? [CountryItem]{
+                self.countries = response
             }
-                catch{
-                    print("error in fething the data",error.localizedDescription)
-                }
-            }.resume()
+            self.selectTableViewOutlet.reloadData()
+        }
     }
-
 }
 
 

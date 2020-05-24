@@ -11,6 +11,9 @@ import UIKit
 class MovieListCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var posterImage: UIImageView!
+    @IBOutlet weak var MovieName: UILabel!
+    @IBOutlet weak var movieRating: UILabel!
+    @IBOutlet weak var movieType: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +22,7 @@ class MovieListCollectionViewCell: UICollectionViewCell {
     
     func setMovieImage(image : UIImage){
         posterImage.image = image
+        posterImage.contentMode = .scaleAspectFill
     }
 
 }

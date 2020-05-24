@@ -111,3 +111,168 @@ extension PracticeViewController : UITableViewDelegate, UITableViewDataSource{
             return cell
         }
 }
+//
+////
+////  MovieTrendingTableViewCell.swift
+////  MainApp
+////
+////  Created by Anmol Chauhan on 20/05/20.
+////  Copyright © 2020 Anmol Chauhan. All rights reserved.
+////
+//
+//import UIKit
+//
+//class MovieTrendingTableViewCell: UITableViewCell {
+//
+//    let api = ApiStruct()
+//    var movieArray  : MoviesData?
+//    var defaultImage = #imageLiteral(resourceName: "loading")
+//    var selectedMovieType: Bool = true
+//    
+//    @IBOutlet weak var collectionViewOutlet: UICollectionView!
+//    //@IBOutlet weak var pageControl: UIPageControl!
+//    
+////    var timer = Timer()
+////    var counter = 0
+//    
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        // Initialization code
+//        
+//        collectionViewOutlet.delegate = self
+//        collectionViewOutlet.dataSource = self
+//        
+//        let nib1 = UINib(nibName: "MovieListCollectionViewCell", bundle: nil)
+//        collectionViewOutlet.register(nib1, forCellWithReuseIdentifier: "MovieListCollectionViewCell")
+//        
+//        let nib2 = UINib(nibName: "ActorNameCollectionViewCell", bundle: nil)
+//        collectionViewOutlet.register(nib2, forCellWithReuseIdentifier: "ActorNameCollectionViewCell")
+//         
+//        getTrendingMovieData()
+//        
+//    }
+//    
+//    
+//    func getTrendingMovieData(){
+//        api.getTrendingMovieData { [weak self] (response) in
+//            if let response = response as? MoviesData{
+//                self?.movieArray = response
+//            }
+//            self?.collectionViewOutlet.reloadData()
+//        }
+//    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
+//}
+//
+//extension MovieTrendingTableViewCell : UICollectionViewDelegate , UICollectionViewDataSource{
+//    
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return movieArray?.results?.count ?? 0
+//    }
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        
+//        if selectedMovieType{
+//            let cell = collectionViewOutlet.dequeueReusableCell(withReuseIdentifier: "MovieListCollectionViewCell", for: indexPath) as! MovieListCollectionViewCell
+//            if let data1 = self.movieArray?.results{
+//                if let url = URL(string: "https://image.tmdb.org/t/p/w500\(data1[indexPath.row].posterPath ?? "")"){
+//                    URLSession.shared.dataTask(with: url) { (data, response, error) in
+//                        if let data = data {
+//                            print("Trending movies indexpath.section",indexPath.section)
+//                            print("Trending movies indexpath.row",indexPath.row)
+//                            DispatchQueue.main.async {
+//                                cell.setMovieImage(image: UIImage(data: data) ?? self.defaultImage)
+//                                cell.posterImage.contentMode = .scaleAspectFill
+//                            }
+//                        }
+//                    }.resume()
+//                }
+//            }
+//            return cell
+//        }
+//        else{
+//            let diffCell = collectionViewOutlet.dequeueReusableCell(withReuseIdentifier: "ActorNameCollectionViewCell", for:indexPath) as! ActorNameCollectionViewCell
+//            diffCell.movieTitle.text = "\(movieArray?.results?[indexPath.row].originalTitle ?? "")"
+//            diffCell.movieRating.text = "\(movieArray?.results?[indexPath.row].voteAverage ?? 0.0)"
+//            if let data1 = self.movieArray?.results{
+//                if let url = URL(string: "https://image.tmdb.org/t/p/w500\(data1[indexPath.row].posterPath ?? "")"){
+//                    URLSession.shared.dataTask(with: url) { (data, response, error) in
+//                        if let data = data {
+//                            print("best drama movies indexpath.section",indexPath.section)
+//                            print("best drama movies indexpath.row",indexPath.row)
+//                            DispatchQueue.main.async {
+//                                diffCell.setMovieImage(image: UIImage(data: data) ?? self.defaultImage)
+//                                diffCell.moviePoster.contentMode = .scaleAspectFill
+//                            }
+//                        }
+//                    }.resume()
+//                }
+//            }
+//            return diffCell
+//        }
+////        let cell = collectionViewOutlet.dequeueReusableCell(withReuseIdentifier: "MovieListCollectionViewCell", for: indexPath) as! MovieListCollectionViewCell
+////        if let data1 = self.movieArray?.results{
+////            if let url = URL(string: "https://image.tmdb.org/t/p/w500\(data1[indexPath.row].posterPath ?? "")"){
+////                URLSession.shared.dataTask(with: url) { (data, response, error) in
+////                    if let data = data {
+////                        print("Trending movies indexpath.section",indexPath.section)
+////                        print("Trending movies indexpath.row",indexPath.row)
+////                        DispatchQueue.main.async {
+////                            cell.setMovieImage(image: UIImage(data: data) ?? self.defaultImage)
+////                            cell.posterImage.contentMode = .scaleAspectFill
+////                        }
+////                    }
+////                }.resume()
+////            }
+////        }
+////        return cell
+//    }
+//}
+//
+//extension MovieTrendingTableViewCell : UICollectionViewDelegateFlowLayout{
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let size = collectionViewOutlet.frame.size
+//        return CGSize(width: size.width, height: size.height)
+//    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0.0
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0.0
+//    }
+//}
+
+
+//home view controller par
+//func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        if indexPath.section == HomeSection.trending{
+//           guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "MovieTrendingTableViewCell", for: indexPath) as? MovieTrendingTableViewCell else{
+//               fatalError()
+//           }
+//                  return cell
+//              }
+//       if indexPath.section == HomeSection.popular{
+//                  guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "ActorNameTableViewCell", for: indexPath) as? ActorNameTableViewCell else{
+//                      fatalError()
+//                  }
+//                  return cell
+//              }
+//       guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "PracticeTableViewCell", for: indexPath) as? PracticeTableViewCell else{
+//           fatalError()
+//       }
+//       return cell

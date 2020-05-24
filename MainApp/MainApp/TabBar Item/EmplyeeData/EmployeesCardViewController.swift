@@ -11,6 +11,7 @@ import UIKit
 class EmployeesCardViewController: UIViewController {
         
     var empArray : Employees?
+    let api = ApiStruct()
 
     @IBOutlet weak var employeeDataTableView: UITableView!
     
@@ -24,39 +25,18 @@ class EmployeesCardViewController: UIViewController {
         employeeDataTableView.register(nib, forCellReuseIdentifier: "empDetailCell")
 
         //call the api function
-        getEmployeeData{
-            self.employeeDataTableView.reloadData()
-            
-        }
+        getEmpData()
+        
     }
     
     //function to get the employee data
-    func getEmployeeData(completionBlock : @escaping () -> ()){
-        _ = URLSessionConfiguration.default
-        let request = URLRequest(url: URL(string:"http://dummy.restapiexample.com/api/v1/employees")!)
-        _ = URLSession.shared.dataTask(with: request) { [ weak self ] (data, response, error) in
-            guard let data = data , let _ = response as? HTTPURLResponse else{
-                return
+    func getEmpData(){
+        api.getEmployeeData { [weak self] (response) in
+            if let response = response as? Employees{
+                self?.empArray = response
             }
-            do{
-                if error == nil{
-                    let decoder = JSONDecoder()
-                    //decoder.keyDecodingStrategy = .useDefaultKeys
-                    let employeeData = try decoder.decode(Employees.self, from: data)
-                    self?.empArray = employeeData
-                    print("data show of card view")
-                    //print("empdata --- >>>>",employeeData)
-                    //print("emparray data --"self.empArray)
-                    DispatchQueue.main.async {
-                        completionBlock()
-                    }
-                }
-            }
-            catch{
-                print(error.localizedDescription)
-            }
-        }.resume()
-        self.employeeDataTableView.reloadData()
+            self?.employeeDataTableView.reloadData()
+        }
     }
 }
 

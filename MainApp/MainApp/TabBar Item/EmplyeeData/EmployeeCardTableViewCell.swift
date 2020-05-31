@@ -24,15 +24,6 @@ class EmployeeCardTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-//
-//    func empIDCell(empI : String){
-//        empID.text = empI
-//    }
-//    func empDataInCell(data : EmployeeStruct){
-//        empID.text = data.id
-//        empName.text = data.employeeName
-//        empSalary.text = data.employeeSalary
-//        empAge.text = data.employeeAge
-//    }
+
     
 }

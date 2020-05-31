@@ -55,8 +55,6 @@ extension EmployeesCardViewController : UITableViewDelegate, UITableViewDataSour
             cell.empName.text = "Name : \(data1[indexPath.row].employeeName ?? "")"
             cell.empSalary.text = "Salary : \(data1[indexPath.row].employeeSalary ?? "")"
             cell.empAge.text = "Age : \(data1[indexPath.row].employeeAge ?? "")"
-            //cell.empIDCell(empI: data1[indexPath.row].id!)
-            //cell.empDataInCell(data: data1[indexPath.row])
         }
         return cell
         }

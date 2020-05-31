@@ -98,13 +98,14 @@ class AccountViewController: UIViewController,UIImagePickerControllerDelegate,UI
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "SignInVC") as! SignInViewController
         self.navigationController?.pushViewController(vc, animated: true)
+//        self.navigationController?.present(vc, animated: true, completion: nil)
     }
     
     //action of join button
     @IBAction func joinButtonTapped(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "JoinVC") as! JoinViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.present(vc, animated: true, completion: nil)
     }
 }
 
@@ -180,6 +181,10 @@ extension AccountViewController : UITableViewDelegate , UITableViewDataSource{
             let vc = storyBoard.instantiateViewController(withIdentifier: "LocationViewController") as! LocationViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        if indexPath.section == 0 && indexPath.row == 1{
+            let vc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         if indexPath.section == 0 && indexPath.row == 3{
             let vc = storyBoard.instantiateViewController(withIdentifier: "EmployeesViewController") as! EmployeesViewController
             self.navigationController?.pushViewController(vc, animated: true)
@@ -196,6 +201,11 @@ extension AccountViewController : UITableViewDelegate , UITableViewDataSource{
             vc.delegateForLanguage = self
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        if indexPath.section == 1 && indexPath.row == 4 {
+            let vc = storyBoard.instantiateViewController(withIdentifier: "ThemeViewController") as! ThemeViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+
 
     }
     

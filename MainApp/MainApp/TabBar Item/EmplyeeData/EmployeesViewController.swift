@@ -20,7 +20,6 @@ class EmployeesViewController: UIViewController {
 
         EmployeeCardView.isHidden = true
         EmployeeListView.isHidden = false
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func segmentControlAction(_ sender: UISegmentedControl) {

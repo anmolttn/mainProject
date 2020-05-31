@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FavMovieTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavMovieTableViewCell" rowHeight="170" id="KGk-i7-Jjw" customClass="FavMovieTableViewCell" customModule="MainApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcf-zE-32X">
+                        <rect key="frame" x="20" y="40" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="ePV-jM-z3u"/>
+                            <constraint firstAttribute="height" constant="90" id="jbI-0C-p1B"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yQ-Yj-ebv">
+                        <rect key="frame" x="130" y="30" width="55" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hn-Jh-8nQ">
+                        <rect key="frame" x="130" y="69" width="36" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ko-vm-R80">
+                        <rect key="frame" x="130" y="105" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-0H-HC0">
+                        <rect key="frame" x="328" y="66.5" width="40" height="37.5"/>
+                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="EX9-uP-aAo"/>
+                            <constraint firstAttribute="width" constant="40" id="vrj-yr-lsH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ybi-0H-HC0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6pN-36-Chd"/>
+                    <constraint firstItem="kcf-zE-32X" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8Vb-B5-D7C"/>
+                    <constraint firstItem="7Ko-vm-R80" firstAttribute="top" secondItem="7hn-Jh-8nQ" secondAttribute="bottom" constant="15" id="CMj-5I-X4M"/>
+                    <constraint firstItem="7hn-Jh-8nQ" firstAttribute="leading" secondItem="kcf-zE-32X" secondAttribute="trailing" constant="20" id="Cx2-al-N98"/>
+                    <constraint firstItem="kcf-zE-32X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Fof-aC-NEc"/>
+                    <constraint firstItem="7hn-Jh-8nQ" firstAttribute="top" secondItem="3yQ-Yj-ebv" secondAttribute="bottom" constant="15" id="L7C-ES-t0B"/>
+                    <constraint firstItem="3yQ-Yj-ebv" firstAttribute="leading" secondItem="kcf-zE-32X" secondAttribute="trailing" constant="20" id="Ul4-Tk-Wxz"/>
+                    <constraint firstItem="3yQ-Yj-ebv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="arW-4z-xkk"/>
+                    <constraint firstItem="7Ko-vm-R80" firstAttribute="leading" secondItem="kcf-zE-32X" secondAttribute="trailing" constant="20" id="iEs-la-wCe"/>
+                    <constraint firstAttribute="trailing" secondItem="ybi-0H-HC0" secondAttribute="trailing" constant="25" id="oLz-Tc-Qjc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieDate" destination="7hn-Jh-8nQ" id="kaf-1C-gwa"/>
+                <outlet property="movieName" destination="3yQ-Yj-ebv" id="KsD-Sw-HPv"/>
+                <outlet property="moviePoster" destination="kcf-zE-32X" id="2ti-k3-tR2"/>
+                <outlet property="movieVote" destination="7Ko-vm-R80" id="zFy-he-0AS"/>
+            </connections>
+            <point key="canvasLocation" x="190.57971014492756" y="158.70535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+    </resources>
+</document>

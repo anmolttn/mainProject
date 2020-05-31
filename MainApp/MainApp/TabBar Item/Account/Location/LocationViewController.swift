@@ -38,15 +38,9 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        guard let localValue : CLLocationCoordinate2D = manager.location?.coordinate else {
+        guard let location = locations.first else {
             return
         }
-        
-        guard let location = locations.last else {
-            return
-        }
-        print("location = \(localValue.latitude) \(localValue.longitude)")
-        
         mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 10, bearing: 0, viewingAngle: 0)
         
         locationManager.stopUpdatingLocation()

@@ -8,75 +8,29 @@
 
 import Foundation
 
-struct TrendingMovies : Codable {
-    let id : Int?
-    let video : Bool?
-    let voteCount : Int?
-    let voteAverage : Double?
-    let title : String?
-    let releaseDate : String?
-    let originalLanguage : String?
-    let originalTitle : String?
-    let genreIds : [Int]?
-    let backdropPath : String?
-    let adult : Bool?
-    let overview : String?
-    let posterPath : String?
-    let popularity : Double?
-    let mediaType : String?
-    
-    enum CodingKeys: String, CodingKey {
-
-        case id = "id"
-        case video = "video"
-        case voteCount = "vote_count"
-        case voteAverage = "vote_average"
-        case title = "title"
-        case releaseDate = "release_date"
-        case originalLanguage = "original_language"
-        case originalTitle = "original_title"
-        case genreIds = "genre_ids"
-        case backdropPath = "backdrop_path"
-        case adult = "adult"
-        case overview = "overview"
-        case posterPath = "poster_path"
-        case popularity = "popularity"
-        case mediaType = "media_type"
-    }
-}
-
-
 struct MoviesData : Codable {
     let page : Int?
-    let results : [TrendingMovies]?
+    let results : [MovieResultModel]?
     let totalPages : Int?
     let totaResults : Int?
-
-    enum CodingKeys: String, CodingKey {
-
-        case page = "page"
-        case results = "results"
-        case totalPages = "total_pages"
-        case totaResults = "total_results"
-    }
 }
 
-struct HomeSection {
-    static let trending = 0
-    static let popular = 1
-    static let bestDrama = 2
-    //static let toprated = 3
-    //static let upcoming = 4
-}
-
-
-
-//protocol for country data
-public protocol MovieProtocol{
+struct MovieResultModel: Codable {
     
-    func passPosterImage(posterImage : String)
-    func passMovieTitle(movieTitle : String)
-    func passMovieDetail(movieOverView : String)
-    func passReleaseDate(movieReleaseDate : String)
-    
+    var popularity: Float?
+    var vote_count: Int?
+    var video: Bool?
+    var vote_average: Float?
+    var title: String?
+    var release_date: String?
+    var original_language: String?
+    var original_title: String?
+    var backdrop_path: String?
+    var adult: Bool?
+    var poster_path: String?
+    var id: Int?
+    var overview: String?
+    var original_name: String?
+    var media_type: String?
+    var first_air_date: String?
 }

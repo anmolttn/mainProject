@@ -5,11 +5,16 @@ target 'MainApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for MainApp
+  # Pods for MainApp 
 
-pod 'Alamofire'
-
-pod 'GoogleMaps'
+  pod 'GoogleMaps'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'iOSDropDown'
+  pod 'SwiftHSVColorPicker'
 
   target 'MainAppTests' do
     inherit! :search_paths

@@ -68,7 +68,7 @@ class MovieDetailsViewController: UIViewController {
     //function to set the data in view
     func setSelectedMovieDetails(){
         
-        if let url = URL(string: "https://image.tmdb.org/t/p/w500\(MoviesDataTableViewCell.dataForMovieDetails?.backdrop_path ?? "\(MoviesDataTableViewCell.dataForMovieDetails?.poster_path ?? "")")"){
+        if let url = URL(string: "https://image.tmdb.org/t/p/w500\(MoviesDataTableViewCell.dataForMovieDetails?.poster_path ?? "\(MoviesDataTableViewCell.dataForMovieDetails?.backdrop_path ?? "")")"){
             print("data in details ",MoviesDataTableViewCell.dataForMovieDetails?.poster_path ?? "")
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                     if let data = data {

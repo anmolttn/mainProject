@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09D0CD49D9DF1D8B546E4FF5 /* Pods_MainApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD897B76EB0FBA1EAA6F924B /* Pods_MainApp.framework */; };
+		260031FF248433FE007BA841 /* LoginAndSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260031FE248433FE007BA841 /* LoginAndSignUp.swift */; };
 		260D9133244890B90081E089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1D22425387F00C9E095 /* ViewController.swift */; };
 		260D9134244890BE0081E089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CF1CE2425387F00C9E095 /* AppDelegate.swift */; };
 		260D9135244890D00081E089 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266451582441E543005623E0 /* HomeViewController.swift */; };
@@ -85,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260031FE248433FE007BA841 /* LoginAndSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndSignUp.swift; sourceTree = "<group>"; };
 		261CF1CB2425387F00C9E095 /* MainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		261CF1CE2425387F00C9E095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		261CF1D02425387F00C9E095 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		2631E3AD246DB69C00FE8E90 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
+				260031FE248433FE007BA841 /* LoginAndSignUp.swift */,
 				26B8276424534D31007FC104 /* SignInViewController.swift */,
 				26B64E6724830F0D00942FA5 /* ForgetPasswordViewController.swift */,
 			);
@@ -731,6 +734,7 @@
 				263A59412475536500E5EDCF /* MoviesData.swift in Sources */,
 				260D913A244890D70081E089 /* AccountTableViewCell.swift in Sources */,
 				260D9135244890D00081E089 /* HomeViewController.swift in Sources */,
+				260031FF248433FE007BA841 /* LoginAndSignUp.swift in Sources */,
 				260D9137244890D00081E089 /* FavouriteViewController.swift in Sources */,
 				26C53BE4247477C0007FA16A /* EmployeesViewController.swift in Sources */,
 				26B64E6824830F0D00942FA5 /* ForgetPasswordViewController.swift in Sources */,

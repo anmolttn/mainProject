@@ -105,7 +105,8 @@ class AccountViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @IBAction func joinButtonTapped(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "JoinVC") as! JoinViewController
-        self.navigationController?.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+//        self.navigationController?.present(vc, animated: true, completion: nil)
     }
 }
 
